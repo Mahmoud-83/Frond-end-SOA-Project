@@ -1,0 +1,22 @@
+<div class="container">
+  <legend>Ajoute un Produit</legend>
+  <form>
+    <div class="mb-3">
+      <label for="txtName" class="form-label">Name</label>
+      <input type="text" name="name" [(ngModel)] = "produitForm.nom" class="form-control" id="txtName" />
+    </div>
+    <div class="mb-3">
+      <label for="txtPrice" class="form-label">Price</label>
+      <input type="text" name="price" [(ngModel)] = "produitForm.price" class="form-control" id="txtPrice" />
+    </div>
+    <div class="mb-3">
+      <label for="txtQuantity" class="form-label">Quantity</label>
+      <input type="text" name="quantity" [(ngModel)] = "produitForm.qantite" class="form-control" id="txtQuantity" />
+    </div>
+    <div class="mb-3">
+      <label for="txtQuantity" class="form-label">Image</label>
+      <input type="text" name="image" [(ngModel)] = "produitForm.image" class="form-control" id="txtimage" />
+    </div>
+    <button type="button" (click)="create()" class="btn btn-primary">Create</button>
+  </form>
+</div>
